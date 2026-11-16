@@ -44,3 +44,8 @@ The option to send the current playerlist to gametools is disabled by default, w
 Rightclick the icon to copy the sender id and paste the id in https://api.gametools.network/docs#/Battlefield%201/bf1seederplayers_bf1_seederplayers__get to show the gathered info.
 
 (linux: https://github.com/community-network/Battlefield-rich-presence-Linux)
+
+### Building from source
+The app targets .NET 11 (`net11.0-windows`), so building it needs the .NET 11 SDK and running it needs the .NET 11 Desktop Runtime.
+
+Showing the current server for Battlefield 1, Battlefield 5 and Battlefield 2042 needs the `JWTTOKEN` secret, which is used to sign requests to the gametools API. The release workflow writes it into `Jwt.cs` in place of `SUPERSECRETPLACEHOLDER` when building. It is not in the repository, so builds made without it (local builds, or builds from a fork that doesn't have the secret) show those three games as "in menu" instead of the server you're on. All other games work fully without it. Official releases are built with the token and have full functionality.
