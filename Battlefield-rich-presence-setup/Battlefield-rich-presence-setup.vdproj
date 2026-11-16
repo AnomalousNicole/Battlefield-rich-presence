@@ -767,7 +767,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_88F47559EF1248C7BC70F3F5B0EC1766"
             {
-            "SourcePath" = "8:..\\Battlefield rich presence\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\Battlefield rich presence\\obj\\Release\\net11.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2DF1EB6D2BD04566B6F4689F5D389132"
